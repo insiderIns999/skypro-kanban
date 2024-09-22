@@ -3,8 +3,8 @@ export const Card = ({ color, subject }) => {
     <div className="cards__item">
       <div className="cards__card card">
         <div className="card__group">
-          <div className="card__theme _orange">
-            <p className="_{color}">{subject}</p>
+          <div className={`card__theme _${color}`}>
+            <p className={`_{color}`}>{subject}</p>
           </div>
           <a href="#popBrowse" target="_self">
             <div className="card__btn">
