@@ -1,17 +1,12 @@
 import { useState } from "react";
 
 const Header = () => {
+  //let modalDisplay = document.getElementById("user-set-target");
   const [visibility, setVisibility] = useState(false);
 
   const changeVisibility = () => {
-    let modalDisplay = document.getElementById("user-set-target").classList;
-    if (visibility == false) {
-      setVisibility(true);
-      modalDisplay.className("modal-on-display");
-    } else {
-      setVisibility(false);
-      modalDisplay.classList.remove("modal-on-display");
-    }
+    if (visibility == false) setVisibility(true);
+    else setVisibility(false);
   };
 
   return (
