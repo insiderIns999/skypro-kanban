@@ -1,11 +1,11 @@
 import { testCardsData } from "../../dada.js";
 
 const Main = () => {
-  testCardsData.map((card) => {
-    return (
-      <main className="main">
-        <div className="container">
-          <div className="main__block">
+  return (
+    <main className="main">
+      <div className="container">
+        <div className="main__block">
+          {testCardsData.map((card) => {
             <div className="main__content">
               <div className="main__column column">
                 <div className="column__title">
@@ -672,12 +672,11 @@ const Main = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div>;
+          })}
         </div>
-      </main>
-    );
-  });
+      </div>
+    </main>
+  );
 };
-
 export default Main;
