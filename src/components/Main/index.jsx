@@ -1,4 +1,4 @@
-import { testCardsData } from "../../dada.js";
+import { testCardsData } from "../../data.js";
 
 const Main = () => {
   return (
