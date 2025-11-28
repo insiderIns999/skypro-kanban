@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const Header = () => {
+  //let modalDisplay = document.getElementById("user-set-target");
   const [visibility, setVisibility] = useState(false);
 
   const changeVisibility = () => {
@@ -26,16 +27,12 @@ const Header = () => {
             <button className="header__btn-main-new _hover01" id="btnMainNew">
               <a href="#popNewCard">Создать новую задачу</a>
             </button>
-            <a
-              //href="#user-set-target"
-              className="header__user _hover02"
-              onClick={changeVisibility}
-            >
+            <a className="header__user _hover02" onClick={changeVisibility}>
               Ivan Ivanov
             </a>
             {visibility && (
               <div
-                className="{`header__pop-user-set pop-user-set ${visibility ? '' : 'change-display'}`}"
+                className="{`header__pop-user-set pop-user-set ${!visibility ? '' : 'change-display'}`}"
                 id="user-set-target"
               >
                 <p className="pop-user-set__name">Ivan Ivanov</p>
