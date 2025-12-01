@@ -5,7 +5,7 @@ const Main = () => {
     <main className="main">
       <div className="container">
         <div className="main__block">
-          {testCardsData.map((card) => {
+          {testCardsData.map((card) => (
             <div className="main__content">
               <div className="main__column column">
                 <div className="column__title">
@@ -672,8 +672,8 @@ const Main = () => {
                   </div>
                 </div>
               </div>
-            </div>;
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </main>
