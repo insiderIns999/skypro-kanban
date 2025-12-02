@@ -1,4 +1,4 @@
-import { CardsItem } from "../CardsItem";
+import CardsItem from "../CardsItem";
 
 const MainColumn = () => {
   return (
