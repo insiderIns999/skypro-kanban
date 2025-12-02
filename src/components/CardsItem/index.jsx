@@ -4,7 +4,7 @@ const CardsItem = () => {
   return (
     <>
       {testCardsData.map((card) => (
-        <div className="cards__item">
+        <div key={card.id} className="cards__item">
           <div className="cards__card card">
             <div className="card__group">
               <div className="card__theme _orange">
