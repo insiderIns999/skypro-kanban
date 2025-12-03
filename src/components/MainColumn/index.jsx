@@ -1,16 +1,24 @@
 import CardsItem from "../CardsItem";
+import { testCardsData } from "../../data.js";
 
 const MainColumn = () => {
   return (
     <>
-      <div className="main__column column">
-        <div className="column__title">
-          <p>Без статуса</p>
+      {testCardsData.map((card) => (
+        <div className="main__column column">
+          <div className="{card.status}">
+            <p>Без статуса</p>
+          </div>
+          <div className="cards">
+            <CardsItem
+              key={card.id}
+              theme={card.theme}
+              title={card.title}
+              date={card.date}
+            />
+          </div>
         </div>
-        <div className="cards">
-          <CardsItem />
-        </div>
-      </div>
+      ))}
     </>
   );
 };
