@@ -4,11 +4,11 @@ const CardsItem = () => {
   return (
     <>
       {testCardsData.map((card) => (
-        <div key={card.id} className="cards__item">
+        <div className="cards__item">
           <div className="cards__card card">
             <div className="card__group">
               <div className="card__theme _orange">
-                <p className="_orange">Web Design</p>
+                <p className="{card.theme}">Web Design</p>
               </div>
               <a href="#popBrowse" target="_self">
                 <div className="card__btn">
