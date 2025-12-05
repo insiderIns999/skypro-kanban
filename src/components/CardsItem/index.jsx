@@ -1,7 +1,7 @@
-const CardsItem = (key, theme, title, date) => {
+const CardsItem = (theme, title, date) => {
   return (
     <>
-      <div id={key} className="cards__item">
+      <div className="cards__item">
         <div className="cards__card card">
           <div className="card__group">
             <div className="card__theme _orange">
