@@ -1159,3 +1159,40 @@ body {
 .change-display {
   display: none;
 }
+
+#user-set-target {
+  z-index: 1;
+  width: 170px;
+  background-color: #fff;
+  border: 1px outset #bbb;
+  position: fixed;
+  right: 360px;
+  top: 87px;
+  height: 165px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 15px 12px 7px -5px #bbb;
+}
+
+@media screen and (max-width: 1200px) {
+  .main__content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main__column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cards {
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+  }
+}
